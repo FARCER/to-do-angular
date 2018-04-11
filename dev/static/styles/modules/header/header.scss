@@ -1,0 +1,14 @@
+header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header {
+  padding: 30px 15px 15px;
+  &.header {
+    &--bg {
+      &_transparent { background: transparent; }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.start-form {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    background-color: rgba($white, .1);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    padding-top: 40px;
+  }
+  &__body {
+    flex: 1;
+  }
+  &__footer {
+    flex: 0 0 auto;
+  }
+  &__photo {
+    @include size(100px);
+    background-color: $white;
+    border-radius: 50%;
+    margin: 0 auto 50px;
+  }
+  &__navigation {
+    display: flex;
+    margin-top: auto;
+    &_link {
+      border-bottom: 3px solid transparent;
+      color: $white;
+      flex: 1;
+      font-size: 12px;
+      padding: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      &.is {
+        &-active {
+          border-color: $malibu;
+        }
+      }
+    }
+  }
+}

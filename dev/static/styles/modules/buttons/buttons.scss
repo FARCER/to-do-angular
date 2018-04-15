@@ -1,0 +1,17 @@
+.btn {
+  align-items: center;
+  background-color: $malibu;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  height: 55px;
+  &.btn {
+    &--transparent {
+      background-color: transparent;
+      opacity: .5;
+    }
+  }
+}

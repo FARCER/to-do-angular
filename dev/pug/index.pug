@@ -13,4 +13,20 @@ block content
 					a(href="").start-form__navigation_link.is-active Sign in
 					a(href="").start-form__navigation_link Sign Up
 			.start-form__body
-			.start-form__footer
+				form.start-form__form.form
+					.form__body
+						.form-group
+							.form-group__icon
+								+icon('user')
+							.form-group__input
+								input(placeholder="Username").g-input
+						.form-group
+							.form-group__icon
+								+icon('lock')
+							.form-group__input
+								input(type="password" placeholder="Password").g-input
+					.form__footer
+						.btn
+							span.btn__text Continue
+						.btn.btn--transparent
+							span.btn__text Forgot Password

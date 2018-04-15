@@ -54,11 +54,15 @@ button { outline: none; }
   height: 100%;
 }
 
-.content { flex: 1 0 auto; }
+.content {
+  flex: 1 0 auto;
+  height: 100%;
+}
 
 .container {
   margin: 0 auto;
   max-width: $content-size;
+  height: 100%;
   width: 100%;
 }
 

@@ -1,6 +1,7 @@
 .start-form {
   display: flex;
   flex-direction: column;
+  height: 100%;
   &__header {
     background-color: rgba($white, .1);
     display: flex;
@@ -10,9 +11,7 @@
   }
   &__body {
     flex: 1;
-  }
-  &__footer {
-    flex: 0 0 auto;
+    padding: 20px;
   }
   &__photo {
     @include size(100px);

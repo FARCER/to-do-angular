@@ -12,6 +12,7 @@ html {
 body {
   background-image: url('../images/general/bg.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: $main-font;
   height: 100%;
 }
@@ -61,7 +62,6 @@ button { outline: none; }
 
 .container {
   margin: 0 auto;
-  max-width: $content-size;
   height: 100%;
   width: 100%;
 }

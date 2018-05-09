@@ -5,10 +5,25 @@ header {
   right: 0;
 }
 .header {
-  padding: 30px 15px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  padding: 20px 15px 15px;
   &.header {
     &--bg {
       &_transparent { background: transparent; }
+    }
+  }
+  &__right { margin-left: auto; }
+  &__btn {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    @include size(30px);
+    &_icon {
+      fill: $white;
+      opacity: .5;
+      @include size(20px);
     }
   }
 }

@@ -2,7 +2,7 @@ extends template/main
 
 block variables
 	- var title = 'Главная страница'
-	- var pageClass = 'index-page'
+	- var pageClass = 'login-page'
 
 block content
 	.container
@@ -10,8 +10,8 @@ block content
 			.start-form__header
 				.start-form__photo
 				.start-form__navigation
-					a(href="").start-form__navigation_link.is-active Sign in
-					a(href="").start-form__navigation_link Sign Up
+					a(href="index.html").start-form__navigation_link.is-active Sign in
+					a(href="sign-up.html").start-form__navigation_link Sign Up
 			.start-form__body
 				form.start-form__form.form
 					.form__body

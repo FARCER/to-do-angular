@@ -1,0 +1,42 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'sign-up-page'
+
+block content
+	.container
+		.start-form
+			.start-form__header
+				.start-form__photo(style="background-image:url('static/images/content/profile/profile.jpg')")
+				.start-form__navigation
+					a(href="index.html").start-form__navigation_link Sign in
+					a(href="sign-up.html").start-form__navigation_link.is-active Sign Up
+			.start-form__body
+				form.start-form__form.form
+					.form__body
+						.form-group
+							.form-group__icon
+								+icon('user')
+							.form-group__input
+								input(placeholder="Username").g-input
+						.form-group
+							.form-group__icon
+								+icon('mail')
+							.form-group__input
+								input(placeholder="email" type="email").g-input
+						.form-group
+							.form-group__icon
+								+icon('lock')
+							.form-group__input
+								input(type="password" placeholder="Password").g-input
+						.form-group
+							.form-group__icon
+								+icon('gift')
+							.form-group__input
+								input(placeholder="Date of birth").g-input
+					.form__footer
+						.btn
+							span.btn__text Connect
+						.btn.btn--transparent
+							span.btn__text Terms & Conditions

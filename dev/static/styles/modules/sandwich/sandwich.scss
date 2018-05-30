@@ -1,0 +1,39 @@
+.sandwich {
+  height: 20px;
+  position: relative;
+  width: 30px;
+  &__line {
+    background-color: rgba($white,.5);
+    height: 2px;
+    position: absolute;
+    transition: all linear .3s;
+    width: 100%;
+    &.sandwich__line {
+      &--top { bottom: 18px; }
+      &--middle {
+        bottom: 9px;
+        opacity: 1;
+      }
+      &--bottom { bottom: 0; }
+    }
+  }
+  &.is {
+    &-active {
+      .sandwich {
+        &__line {
+          &.sandwich__line {
+            &--top {
+              bottom: 10px;
+              transform: rotate(-45deg);
+            }
+            &--middle { opacity: 0; }
+            &--bottom {
+              bottom: 10px;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

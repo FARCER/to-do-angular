@@ -13,6 +13,14 @@ header {
       &_transparent { background: transparent; }
     }
   }
+  &__left {
+    align-items: center;
+    display: flex;
+    & > * {
+      margin-right: 20px;
+      &:last-child { margin-right: 0; }
+    }
+  }
   &__right { margin-left: auto; }
   &__btn {
     align-items: center;

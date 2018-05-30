@@ -1,4 +1,5 @@
 header
-	.header.header--bg_transparent
-		if(pageClass === 'sign-up-page')
-			include sign-up
+	if(pageClass === 'sign-up-page')
+		include sign-up
+	else if (pageClass === 'walkthrough-page')
+		include walkthrough

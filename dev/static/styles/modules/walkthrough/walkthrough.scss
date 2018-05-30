@@ -1,0 +1,38 @@
+.walkthrough {
+  height: 100%;
+  padding-top: 180px;
+  &__item {
+    @include size(220px);
+    background-color: rgba($white, .5);
+    margin: 0 auto;
+    &-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    &.is {
+      &-active {
+        @include size(250px);
+        background-color: $white;
+        box-shadow: 0 0 15px 3px rgba($black, .5);
+      }
+    }
+  }
+  &__icon {
+    fill: $white;
+    @include size(50px);
+    &-wrapper {
+      @include size(130px);
+      align-items: center;
+      background-color: $malibu;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  }
+}

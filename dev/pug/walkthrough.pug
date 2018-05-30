@@ -1,0 +1,14 @@
+extends template/main
+
+block variables
+	- var title = ''
+	- var pageClass = 'walkthrough-page'
+
+block content
+	.container
+		.walkthrough
+			.walkthrough__item.is-active
+				.walkthrough__item-content
+					.walkthrough__icon-wrapper
+						+icon('add-task','walkthrough__icon')
+					span.walkthrough__title Add & Manage Tasks

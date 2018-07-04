@@ -18,10 +18,11 @@ html(lang="ru-RU")
 		<![endif]-->
 	body(class=pageClass)
 		.wrapper
-			include ../modules/header/header
-			.content
-				block content
-			include ../modules/footer/footer
+			.wrapper__inner
+				include ../modules/header/header
+				.content
+					block content
+				include ../modules/footer/footer
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

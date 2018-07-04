@@ -1,0 +1,18 @@
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  &__link {
+    align-items: center;
+    @include size(50px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    &.footer-nav__link--task {
+      background-color: $malibu;
+    }
+  }
+  &__icon {
+    fill: $white;
+    @include size(20px);
+  }
+}

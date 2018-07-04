@@ -1,0 +1,12 @@
+mixin footerNavItem(link,icon)
+	li.footer-nav__item
+		if(icon==="add-task")
+			a(href="").footer-nav__link.footer-nav__link--task
+				+icon(icon,'footer-nav__icon')
+		else
+			a(href="").footer-nav__link
+				+icon(icon,'footer-nav__icon')
+
+if (pageClass === 'home-page')
+	include home
+

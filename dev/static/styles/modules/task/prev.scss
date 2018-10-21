@@ -1,0 +1,44 @@
+.task-prev {
+  @include size(160px);
+  background-color: rgba($white, .1);
+  border-left: 2px solid transparent;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  &.is {
+    &-completed {
+      border-left-color: $completed-task;
+    }
+    &-snoozed {
+      border-left-color: $snoozed-task;
+    }
+    &-overdue {
+      border-left-color: $overdue-task;
+    }
+  }
+  &__time {
+    margin-bottom: 20px;
+    &-icon {
+      @include size(20px);
+      fill: $base-icon-color;
+      margin-right: 10px;
+    }
+  }
+  &-peoples {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &-people {
+    @include size(15px);
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+}

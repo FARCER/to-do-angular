@@ -7,3 +7,50 @@ block variables
 block content
 	.container
 		.home
+			.tasks-today
+				.tasks-today__header
+					span.tasks-today__title 6 Tasks
+					span.tasks-today__descr DUE TODAY
+				.tasks-today__body
+					.task-prev.is-completed
+						.task-prev__content
+							.task-prev__time
+								+icon('clock','task-prev__time-icon')
+								span 9 - 10am
+							span.task-prev__name Weekly Design Meeting
+						ul.task-prev-peoples
+							li.task-prev-peoples__item
+								.task-prev-peoples__count + 2
+							li.task-prev-peoples__item
+								.task-prev-people
+							li.task-prev-peoples__item
+								.task-prev-people
+							li.task-prev-peoples__item
+								.task-prev-people
+					.task-prev.is-snoozed
+						.task-prev__content
+							.task-prev__time
+								+icon('clock','task-prev__time-icon')
+								span 11am
+							span.task-prev__name Call James
+						ul.task-prev-peoples
+							li.task-prev-peoples__item
+								.task-prev-people
+					.task-prev.is-completed
+						.task-prev__content
+							.task-prev__time
+								+icon('clock','task-prev__time-icon')
+								span 3 - 4pm
+							span.task-prev__name Catch up with Dave
+						ul.task-prev-peoples
+							li.task-prev-peoples__item
+								.task-prev-people
+					.task-prev.is-completed
+						.task-prev__content
+							.task-prev__time
+								+icon('clock','task-prev__time-icon')
+								span 7pm
+							span.task-prev__name Dinner with Andrea
+						ul.task-prev-peoples
+							li.task-prev-peoples__item
+								.task-prev-people
